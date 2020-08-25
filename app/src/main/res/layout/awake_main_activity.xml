@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择标准(小时)"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="急松"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <RadioButton
+                android:id="@+id/rb24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <RadioButton
+                android:id="@+id/rb48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="48"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etAwakeDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_frame_shape"
+        android:hint="请输入/扫描RFID"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <include layout="@layout/line"/>
+
+    <ListView
+        android:divider="@null"
+        android:id="@+id/lv_AwakeList"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/submit"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_blue_circle_selector"
+        android:layout_height="wrap_content" />
+</LinearLayout>

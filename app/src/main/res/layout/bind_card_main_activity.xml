@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:id="@+id/bindCardMainFilterLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:selectAllOnFocus="true"
+                android:padding="7dp"
+                android:background="@drawable/et_frame_shape"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:hint="设备名"
+                android:layout_marginRight="5dp"
+                android:id="@+id/etBindCardMainEquipmentName"
+                android:layout_width="0dp"
+                android:completionThreshold="1"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <AutoCompleteTextView
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/et_frame_shape"
+                android:textSize="20sp"
+                android:completionThreshold="1"
+                android:textColor="@color/black"
+                android:padding="7dp"
+                android:hint="品牌"
+                android:id="@+id/etBindCardMainBrand"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <AutoCompleteTextView
+                android:selectAllOnFocus="true"
+                android:background="@drawable/et_frame_shape"
+                android:id="@+id/etBindCardMainModel"
+                android:textSize="20sp"
+                android:completionThreshold="1"
+                android:textColor="@color/black"
+                android:padding="7dp"
+                android:hint="型号"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <!--<Spinner-->
+            <!--android:id="@+id/spBindCardMainEquipmentAssetsCode"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<Button-->
+            <!--android:id="@+id/btnBindCardMainSearch"-->
+            <!--android:text="搜索"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@drawable/btn_blue_circle_selector"-->
+            <!--android:layout_height="match_parent" />-->
+        </LinearLayout>
+        <include layout="@layout/line"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/et_frame_shape"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:hint="请输入资产编号/出厂编号"
+                android:id="@+id/etBindCardMainAssetsCode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/cbBindCardMainQueryInAll"
+                android:padding="5dp"
+                android:text="查询全部"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/line"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvBindCardMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/bindCardMainShowBindEPLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="显示已绑定的设备"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/cbBindCardMainShowBindEP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnBindCardMainSearchSubmit"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="查询已上传的设备信息"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

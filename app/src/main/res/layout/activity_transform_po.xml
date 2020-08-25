@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/transformPoNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/et_frame_shape"
+            android:gravity="center"
+            android:hint="完整款号"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/transformGroupNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/et_frame_shape"
+            android:gravity="center"
+            android:hint="班组"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/transformPoDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/et_frame_shape"
+            android:gravity="center"
+            android:hint="转换款日期"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/transformData_seach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:text="查询"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="顺序"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/line_vertical" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="项目"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/line_vertical" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="目标KPI"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/line_vertical" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="责任人"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <include layout="@layout/line_vertical" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="提前天数"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <include layout="@layout/line_vertical" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="目标确认日期"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <include layout="@layout/line_vertical" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="实际KPI"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <include layout="@layout/line_vertical" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="实际确认日期"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <include layout="@layout/line_vertical" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_vertical" />
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/lv_transformSequence"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformProject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="4">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformKpi_T"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformResponsibleMan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="2">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformAdvanceDay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformConfirmDate_T"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="2">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformKpi_A"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformConfirmDate_A"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="2">
+        </ListView>
+        <include layout="@layout/line_vertical"/>
+        <ListView
+            android:id="@+id/lv_transformRemark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="4">
+        </ListView>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFACD"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="@string/Ps"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/transformData_commit"
+            android:textColor="@color/white"
+            android:text="提交内容"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="最终实际达成率："
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/calculatePercentage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="计算"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

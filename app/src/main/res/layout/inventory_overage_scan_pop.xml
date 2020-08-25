@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="EPCode："
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvInventoryOverageScanPopEPCode"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="资产编号："
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvInventoryOverageScanPopAssetsCode"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+       <LinearLayout
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:textSize="30sp"
+               android:textColor="@color/black"
+               android:text="扫描结果："
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tvInventoryOverageScanPopScanResult"
+               android:text="未扫描到"
+               android:textSize="30sp"
+               android:textColor="@color/red"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnInventoryOverageScanPopMail"
+        android:layout_margin="5dp"
+        android:text="发送邮件"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_green_circle_selector"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnInventoryOverageScanPopStartStop"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="开始盘查"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/inventoryOverageScanPopStopLayout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="盘点中..."
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnInventoryOverageScanPopCancel"
+        android:layout_margin="5dp"
+        android:text="取消"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_green_circle_selector"
+        android:layout_height="wrap_content" />
+</LinearLayout>

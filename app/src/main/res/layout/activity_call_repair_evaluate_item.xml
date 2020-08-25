@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+        app:cardBackgroundColor="@color/white"
+    app:cardElevation="10dp"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="设备名称："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairEquipmentName"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="成本中心："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairCostCenter"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="设备编号："
+    android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/tvCallRepairEPCode"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="出厂编号："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairOutOfFactoryCode"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="设备型号："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairEquipmentModel"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="资产编号："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairAssetsCode"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="接单人员："
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvCallRepairRepairUser"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="接单时间："
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvCallRepairRepairStartDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="保全确认："
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvCallRepairCompleteDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="机缝确认："
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvCallRepairConfirmDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="叫修时间："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairTime"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="维修状态："
+    android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/tvCallRepairEquipmentState"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:textColor="@color/blue"
+    android:textSize="20sp"
+    android:text=""
+    android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/cancelCallRepair"
+            android:visibility="gone"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_width="50dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

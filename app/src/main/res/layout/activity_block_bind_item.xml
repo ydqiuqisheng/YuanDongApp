@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/block_fepo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="FEPO"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/block_size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Size"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/block_qty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="件数"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/block_pacCo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="包数"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/block_shelfNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="架号"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>

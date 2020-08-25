@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/load_BillNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="拉布单"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/load_Po"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FEPO"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/load_BedNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="裁次"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/load_Comb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COMB"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/load_Qty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="数量"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</LinearLayout>

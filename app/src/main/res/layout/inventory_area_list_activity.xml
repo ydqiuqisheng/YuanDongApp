@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvInventoryAreaTop"
+        android:textSize="25sp"
+        android:padding="7dp"
+        android:textColor="@color/red"
+        android:alpha="0.7"
+        android:text="剩余200台未盘的资产设备"
+        android:background="@color/graylower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/line"/>
+    <ListView
+        android:id="@+id/lvInventoryArea"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+    android:layout_height="0dp"/>
+</LinearLayout>

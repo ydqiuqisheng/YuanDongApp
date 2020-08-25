@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvInventoryAreaTitle"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="盘点的区域名"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etInventoryAreaDialog"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:hint="请输入你要盘点的区域名"
+        android:background="@drawable/et_frame_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

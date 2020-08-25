@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCallRepair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="呼叫维修"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/CallRepairRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="叫修清单"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnRepairEvaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_green_circle_selector"
+            android:padding="15dp"
+            android:text="我的叫修"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>

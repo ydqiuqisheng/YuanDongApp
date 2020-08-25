@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:text="盘点工厂："
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:gravity="center_horizontal"
+                android:id="@+id/spInventoryMainFactory"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnInventoryMainContinue"
+            android:text="继续以前的设备盘点"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_green_circle_selector"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnInventoryMainDown"
+            android:text="下载新待盘点设备"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

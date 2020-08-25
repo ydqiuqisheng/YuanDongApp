@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etInputBills"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="输入公司款号查询"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="图表测试"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnTransformPo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:text="转换款准备表"
+
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnTargetYield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="进出产量"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/unSeePDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="待看制单查看"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnViewPDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="制单查询"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnMeetingRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="会议记录查看"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnDownLoadVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_green_circle_selector"
+            android:padding="15dp"
+            android:text="GSD工序视频下载"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnViewVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_green_circle_selector"
+            android:padding="15dp"
+            android:text="GSD工序视频演示(8码可查)"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <EditText
+        android:id="@+id/et_TakeInfo"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/et_frame_shape"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/cpTake_car"
+            android:gravity="center"
+            android:padding="5dp"
+            android:hint="裁片车号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/cpTakeAway"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="取片"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FEPO"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="裁次"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COMB"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="层数"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <ListView
+        android:choiceMode="singleChoice"
+        android:id="@+id/TakeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+</LinearLayout>

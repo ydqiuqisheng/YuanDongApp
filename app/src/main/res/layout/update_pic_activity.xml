@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"></FrameLayout>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView_l"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/title"-->
+        <!--app:layoutManager="android.support.v7.widget.LinearLayoutManager"-->
+        <!--tools:listitem="@layout/activity_text_larger" />-->
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_toEndOf="@id/recyclerView_l"-->
+        <!--android:layout_toRightOf="@id/recyclerView_l"-->
+        <!--android:fillViewport="true"-->
+        <!--android:overScrollMode="never"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyclerView_t"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:overScrollMode="never"-->
+                <!--app:layoutManager="android.support.v7.widget.GridLayoutManager"-->
+                <!--app:spanCount="9"-->
+                <!--tools:listitem="@layout/activity_text_larger" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyclerView_r"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:overScrollMode="never"-->
+                <!--app:layoutManager="android.support.v7.widget.GridLayoutManager"-->
+                <!--app:spanCount="9"-->
+                <!--tools:listitem="@layout/activity_text_larger" />-->
+        <!--</LinearLayout>-->
+
+
+    <!--</HorizontalScrollView>-->
+</RelativeLayout>

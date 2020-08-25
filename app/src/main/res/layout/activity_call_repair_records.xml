@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/tv_queryDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/et_queryDay"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/et_frame_shape"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="班组"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <Spinner
+                android:id="@+id/sp_queryGroup"
+                android:background="@drawable/et_frame_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/searchCallRepairRecords"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.05"
+            android:gravity="center"
+            android:text="班组"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="叫修人"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="叫修机台"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="叫修时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="维修开始时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="维修结束时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="响应时间(分)"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="维修时间(分)"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <ListView
+        android:divider="@null"
+        android:id="@+id/lv_CallRepairRecords"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

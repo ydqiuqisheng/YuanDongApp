@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="设备名称："
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvEPSubmitItemName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:text="A型设备"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="RFID："
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvEPSubmitItemEPCode"
+                android:layout_width="wrap_content"
+                android:textColor="@color/green"
+                android:text="158985996655698555"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+            android:gravity="center_vertical"
+           android:layout_height="wrap_content">
+           <TextView
+               android:textSize="20sp"
+               android:layout_width="wrap_content"
+               android:textColor="@color/black"
+               android:text="入厂日期："
+               android:layout_marginRight="10dp"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textSize="20sp"
+               android:id="@+id/tvEPSubmitItemInFactoryDate"
+               android:layout_width="wrap_content"
+               android:textColor="@color/blue"
+               android:text="2019-03-08"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="折旧日期："
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvEPSubmitItemDepreciationDate"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:text="2019-03-08"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:gravity="center_vertical"
+          android:layout_width="0dp"
+          android:orientation="horizontal"
+          android:layout_weight="1"
+          android:layout_height="wrap_content">
+          <TextView
+              android:textSize="20sp"
+              android:layout_width="wrap_content"
+              android:textColor="@color/black"
+              android:text="资产编号："
+              android:layout_marginRight="10dp"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:textSize="20sp"
+              android:id="@+id/tvEPSubmitItemAssetsCode"
+              android:layout_width="wrap_content"
+              android:textColor="@color/blue"
+              android:text="159869"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="出厂编号："
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvEPSubmitItemOufFactoryCode"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:text="159869"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="成本中心："
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvEPSubmitItemCostCenter"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:text="5654616456"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="报关单号："
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvEPSubmitItemDeclareNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5561561564156"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

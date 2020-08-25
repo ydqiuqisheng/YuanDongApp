@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:id="@+id/PDFTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="FEPO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="样品类别"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="BUY信息"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="备注"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <ListView
+        android:choiceMode="singleChoice"
+        android:id="@+id/UnSeePDFList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+</LinearLayout>

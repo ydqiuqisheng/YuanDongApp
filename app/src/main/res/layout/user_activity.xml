@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/etUserSearch"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/et_frame_shape"
+        android:hint="用户名/组别"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/line"/>
+    <ListView
+        android:id="@+id/lvUser"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <Button
+        android:id="@+id/btnUserAdd"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_blue_circle_selector"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="添加"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

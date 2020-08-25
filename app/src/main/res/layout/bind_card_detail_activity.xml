@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="提示：请使用设备进行扫描RFID卡"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/line"/>
+
+    <EditText
+        android:id="@+id/etBindCardDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_frame_shape"
+        android:hint="请输入/扫描RFID"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <include layout="@layout/line"/>
+    <ListView
+        android:id="@+id/lvBindCardDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnBindCardDetailStartStop"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="开始"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/bindCardDetailInventoryingLayout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="扫描中..."
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

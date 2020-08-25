@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cpTake_choose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/cpTake_Po"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FEPO"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+
+        <TextView
+            android:id="@+id/cpTake_BedNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="裁次"
+            android:textColor="@color/black" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/cpTake_Comb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COMB"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/cpTake_Qty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="数量"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/cpTake_Layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="层数"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

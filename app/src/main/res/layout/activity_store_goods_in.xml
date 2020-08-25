@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <EditText
+        android:id="@+id/et_StoreNumber"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/et_frame_shape"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="储位号"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_StoreNumber"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/store_clear"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="清空"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<TextView-->
+            <!--android:id="@+id/store_unbind"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="待绑定0箱"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/et_frame_shape"-->
+            <!--android:textSize="25sp"-->
+            <!--android:textColor="@color/red"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单据号/箱号"
+            android:gravity="center"
+            android:background="@drawable/et_frame_shape"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <ListView
+            android:divider="@null"
+            android:id="@+id/lvBillNumberList"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/store_bill_bind"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="绑定"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/unBlock_pacNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="包号"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+
+        <TextView
+            android:id="@+id/unBlock_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="条码号"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/unBlock_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="架号"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/unBlock_fepo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="FEPO"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/unBlock_comb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Comb"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/unBlock_size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Size"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/unBlock_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>

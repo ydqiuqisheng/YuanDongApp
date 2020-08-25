@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvRoleItemRole"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:text="A组"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvRoleItemFactory"
+            android:layout_width="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="8500"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>

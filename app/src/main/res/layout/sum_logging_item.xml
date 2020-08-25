@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+        <TextView
+            android:id="@+id/log_SumFepo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEPO"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/log_SumCp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户PO"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/log_SumComb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comb"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/log_SumSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尺寸"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/log_SumQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+</LinearLayout>

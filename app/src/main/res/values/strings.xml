@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">远东服装管理平台</string>
+    <string name="net_no_active">请在网络通畅的情况下使用！！！</string>
+    <string name="connect_server_error">服务器连接失败，请检查！！！</string>
+    <string name="webservice_no_query">查询的结果不存在，请检查！！！</string>
+
+
+    <!--android6.0权限-->
+    <string name="permission_settings">设置</string>
+    <string name="permission_help">帮助</string>
+    <string name="permission_string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="permission_quit">退出</string>
+    <string name="resume">生产履历表</string>
+    <string name="Products_show">款式图款式图</string>
+    <string name="season">季节:</string>
+    <string name="style_no">款号:</string>
+    <string name="category">类别:</string>
+    <string name="template">模板:</string>
+    <string name="technology">工艺:</string>
+    <string name="tools">辅助工具:</string>
+    <string name="equipment">特殊设备:</string>
+    <string name="parameter">设备参数:</string>
+    <string name="key_point">样板重点:</string>
+    <string name="sale_risk">销样风险:</string>
+    <string name="other">其他:</string>
+    <string name="process_video">工艺视频</string>
+    <string name="intact_link">PE完整视频链接</string>
+    <string name="link_error">链接地址有误!</string>
+    <string name="invalid_link">未上传视频或无效链接!</string>
+    <string name="Ps">补充说明:转款指相同品项的转换;  换款指不同品项的转换;  CO第一阶段目标为3分钟,COPT目标=SMV+CO目标*人数</string>
+
+    <item type="id" name="tag_checked">checked</item>
+    <item type="id" name="tag_scan">scan</item>
+    <item type="id" name="tag_nono">nono</item>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">/>
+        <TextView
+            android:id="@+id/SEWLINE"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1.05"
+            android:gravity="center"
+            android:text="班组"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/CALLREPAIREMPLOYEEID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="叫修人"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/EQUNAME"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="叫修机台"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/CALLREPTIME"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="叫修时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/RESPTIME"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="维修开始时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/REPAIREDTIME"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="维修结束时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/RESPONSETIMES"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="响应时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/REPAIRTIMES"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="维修时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>

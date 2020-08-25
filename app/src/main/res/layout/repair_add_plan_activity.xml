@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="工厂："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRepairAddPlanFactory"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:text="苏州A厂"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="设备名："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRepairAddPlanEquipmentName"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:text="设备A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="EPCode："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRepairAddPlanEPCode"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:text="13599866584596558"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="成本中心："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRepairAddPlanCostCenter"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:text="AAA-BBB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="资产编号："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRepairAddPlanAssetsCode"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:text="MMM-NNN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="出厂编码："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRepairAddPlanOutFactoryCode"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:text="XXX-YYY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/gray"
+        android:text="提示：选择开始、结束时间，进行添加并上传即可"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="开始维修时间："
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvRepairAddPlanStartTime"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:text="开始维修时间："
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="结束维修时间："
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvRepairAddPlanEndTime"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"
+                    android:text="开始维修时间："
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnRepairAddPlanAdd"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="添加"
+            android:textSize="20sp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/lvRepairAddPlan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etQueryEquipmentSubmitSearch"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:hint="资产编号/出厂编号/设备名称/EPCCode"
+            android:background="@drawable/et_frame_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnQueryEquipmentSubmitSearch"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="查询"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <ListView
+        android:id="@+id/lvQueryEquipmentSubmit"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <include layout="@layout/line"/>
+
+    <RadioGroup
+        android:id="@+id/rgQueryEquipmentSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rbQueryEquipmentSubmitNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:checked="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="在线查询"
+            android:textColor="@color/blue" />
+
+        <RadioButton
+            android:id="@+id/rbQueryEquipmentSubmitNoNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="离线查询"
+            android:textColor="@color/red" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnQueryEquipmentSubmitDownData"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:alpha="0.5"-->
+            <!--android:background="@drawable/btn_blue_circle_selector"-->
+            <!--android:enabled="false"-->
+            <!--android:text="离线下载"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnQueryEquipmentSubmitClearDownData"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:alpha="0.5"-->
+            <!--android:background="@drawable/btn_blue_circle_selector"-->
+            <!--android:enabled="false"-->
+            <!--android:text="清除离线下载数据"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp" />-->
+    </RadioGroup>
+
+    <include layout="@layout/line"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/red"
+        android:text="提示：在线查询->无需下载,直接查询\n            离线查询->先下载，再查询"
+        android:padding="7dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

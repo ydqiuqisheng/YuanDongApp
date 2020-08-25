@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.huansi.equipment.equipmentapp.widget.CheckableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_contain"
+
+    android:minHeight="?android:listPreferredItemHeight"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/logging_state"
+        android:paddingStart="8dp"
+        android:contentDescription=""
+        android:src="@drawable/icon_minus"
+        android:duplicateParentState="true"
+        android:layout_width="23dp"
+        android:layout_height="23dp" />
+
+    <TextView
+        android:id="@+id/log_PackageNo"
+        android:text="log_PackageNo"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/log_DTFepo"
+        android:text="akljd"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/log_DTComb"
+        android:text="akljdn"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/log_DTSize"
+        android:text="ndwonld"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/log_DTQuantity"
+        android:text="ndwonld"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red" />
+
+
+</net.huansi.equipment.equipmentapp.widget.CheckableLinearLayout>

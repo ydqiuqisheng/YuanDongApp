@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <include layout="@layout/tool_bar"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="维护项目："
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spRepairDetailAddProject"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/line"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="维修方法："
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etRepairDetailAddMethod"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:hint="请输入维修方法"
+                android:background="@drawable/et_frame_shape"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/line"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="维修结果："
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spRepairDetailAddResult"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/line"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="备注："
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etRepairDetailRemark"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:hint="请输入备注"
+                android:background="@drawable/et_frame_shape"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/line"/>
+    </LinearLayout>
+   <Button
+       android:id="@+id/btnRepairDetailAddSave"
+       android:layout_margin="10dp"
+       android:textSize="20sp"
+       android:textColor="@color/white"
+       android:text="保存"
+       android:layout_width="match_parent"
+       android:background="@drawable/btn_blue_circle_selector"
+
+       android:layout_height="wrap_content" />
+</LinearLayout>

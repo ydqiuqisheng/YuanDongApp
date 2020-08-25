@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etRepairSearch"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="资产编号/出厂编号/RFID号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnRepairSearch"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <!--<ExpandableListView-->
+        <!--android:divider="@null"-->
+        <!--android:id="@+id/elvRepairPlan"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"/>-->
+    <ListView
+        android:divider="@null"
+        android:id="@+id/lvRepairList"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

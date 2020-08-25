@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etMachineCode"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="输入机器编号或扫描二维码"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/getMachineCode"
+            android:text="扫描"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班组"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:background="@drawable/et_frame_shape"
+            android:id="@+id/spGroupLocation"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报修人"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/caller"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机器名称"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/machineName"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/et_frame_shape"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/errorDescription"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:hint="故障描述:"
+        android:background="@drawable/et_frame_shape"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/startCall"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_blue_circle_selector"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/receiveDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="收料日期"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/vatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缸号"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1.05"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可否生产"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="面料等级"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/abNormalType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="异常分类"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/actual_Width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="实际门幅"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/standard_Width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标准门幅"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="品管描述"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>

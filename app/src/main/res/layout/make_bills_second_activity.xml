@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/MFCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="面辅料卡"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/WorkGuidance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="标准作业指导书"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/MachineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue_circle_selector"
+            android:padding="15dp"
+            android:text="Layout车位图"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <Button
+        android:id="@+id/RiskControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_blue_circle_selector"
+        android:padding="15dp"
+        android:text="销样风险管控表"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/etPOSearch"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/et_frame_shape"
+        android:hint="FEPO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/PDFTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="最终客户"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="FEPO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="样品类别"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="提交人"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="提交时间"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <ListView
+        android:choiceMode="singleChoice"
+        android:id="@+id/UnMeasureSimpleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+</LinearLayout>

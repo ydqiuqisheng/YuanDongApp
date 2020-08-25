@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- colorPrimary 定义 ActionBar 的背景色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- colorPrimaryDark 定义状态栏的背景色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- colorAccent 为 colorControlActivated 的默认值，该值用户显示控件的高亮状态 -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+
+
+
+</resources>

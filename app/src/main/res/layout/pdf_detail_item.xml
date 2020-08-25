@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/pdf_Fepo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="FEPO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/pdf_SampleType"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="样品类别"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/pdf_poList"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="PoList"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/pdf_BuyMsg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="BUY信息"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/pdf_remark"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="无"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>

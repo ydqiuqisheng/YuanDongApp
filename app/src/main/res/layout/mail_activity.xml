@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="RFID："
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="20sp"
+                    android:id="@+id/tvMailRFID"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/green"
+                    android:text="2019-03-08"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="入厂日期："
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/tvMailInFactoryDate"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="2019-03-08"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="折旧日期："
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/tvMailDepreciationDate"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="2019-03-08"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="资产编号："
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/tvMailAssetsCode"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="159869"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="出厂编号："
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/tvMailOufFactoryCode"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="159869"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="成本中心："
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/tvMailCostCenter"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="5654616456"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="报关单号："
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/tvMailDeclareNum"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="5561561564156"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:text="所在工厂"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tvInventoryItemCompanyIn"
+                        android:gravity="center"
+                        android:text="苏州远东"
+                        android:textSize="20sp"
+                        android:textColor="@color/blue"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:text="盘点状态"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tvMailInventoryStatus"
+                        android:gravity="center"
+                        android:text="盘盈"
+                        android:textSize="20sp"
+                        android:textColor="@color/red"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="发件人："
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/etMailSender"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/et_frame_shape"
+                    android:layout_weight="1"
+                    android:hint="发件人"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="主题："
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/etMailSubject"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/et_frame_shape"
+                    android:layout_weight="1"
+                    android:hint="主题"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="重要程度："
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spMailImportance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="收件人："
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/etMailAddressee"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/et_frame_shape"
+                    android:layout_weight="1"
+                    android:hint="收件人"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/imvMailAddresseeAdd"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:src="@drawable/icon_add"
+                    android:layout_width="54dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/mailAddresseeLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="抄送："
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/etMailCC"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/et_frame_shape"
+                    android:layout_weight="1"
+                    android:hint="抄送人员"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/imvMailCCAdd"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:src="@drawable/icon_add"
+                    android:layout_width="54dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/mailCCLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <include layout="@layout/line"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnMailSendMail"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_blue_circle_selector"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="发送邮件"
+        android:layout_height="wrap_content" />
+</LinearLayout>

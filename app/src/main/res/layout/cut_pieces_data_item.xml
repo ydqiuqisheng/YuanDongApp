@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/checkData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="收料日期"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/infoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="资料日期"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/vatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缸号"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/dimensionalStability_Length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="水洗缩率(经向)"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/dimensionalStability_Width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="水洗缩率(纬向)"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/ironingShrinkage_Length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="烫缩(经向)"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <include layout="@layout/line_vertical"/>
+        <TextView
+            android:id="@+id/ironingShrinkage_Width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="烫缩(纬向)"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+</LinearLayout>
